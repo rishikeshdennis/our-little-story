@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me? ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===============================
+         SCREEN 1: MAIN QUESTION
+    ================================ -->
+    <div id="screen-main" class="screen active">
+
+        <!--
+            CHANGE THIS TO YOUR FIRST STICKER/GIF.
+            JavaScript will swap it on each No click.
+        -->
+        <img id="bear" src="cathug.webp" alt="Cute Sticker">
+
+        <h1 id="question">Do you love me? 🥺</h1>
+
+        <div class="buttons" id="mainButtons">
+            <button id="yesBtn">Yes ❤️</button>
+            <button id="noBtn">No 🥺</button>
+        </div>
+
+    </div>
+
+
+    <!-- ===============================
+         SCREEN 2: SUCCESS
+    ================================ -->
+    <div id="screen-success" class="screen">
+
+        <!--
+            REPLACE src WITH YOUR HUG GIF.
+        -->
+        <img src="hugcute.gif" alt="Cute Hug">
+
+        <h1>YAYYYYYY!! ❤️</h1>
+        <h2>I knew you'd say yes, my baby 🥹❤️</h2>
+
+        <p id="loveMsg">I Love You So Much ❤️</p>
+        <p>Now you owe me a hug 🤭</p>
+
+    </div>
+
+
+    <!-- ===============================
+         SCREEN 3: SURPRISE QUESTION
+    ================================ -->
+    <div id="screen-surprise-q" class="screen">
+
+        <!-- lovecat.gif — surprise screen sticker -->
+        <img class="surprise-sticker" src="lovecat.gif" alt="Love Cat">
+
+        <h1 id="surpriseQuestion">Do you want a surprise? ❤️</h1>
+
+        <div class="buttons">
+            <button id="surpriseYesBtn">Yes ❤️</button>
+            <button id="surpriseNoBtn">No 🥺</button>
+        </div>
+
+    </div>
+
+
+    <!-- ===============================
+         SCREEN 4: PASSWORD CHALLENGE
+    ================================ -->
+    <div id="screen-password" class="screen">
+
+        <!-- catstand.webp — password screen sticker -->
+        <img class="surprise-sticker" src="catstand.webp" alt="Cat Standing">
+
+        <h2 class="password-title">Enter the password to unlock your surprise 💌</h2>
+
+        <div class="password-box">
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Type the password..."
+                autocomplete="off"
+            />
+            <button id="unlockBtn">Unlock 💖</button>
+        </div>
+
+        <!-- Heart clue bubble — shown after wrong attempts -->
+        <div id="clueBubble" class="clue-bubble hidden">
+            <div class="heart-bubble">
+                <p id="clueText"></p>
+            </div>
+        </div>
+
+        <p id="attemptsMsg" class="attempts-msg"></p>
+
+    </div>
+
+
+    <!-- ===============================
+         SCREEN 5: LOVE LETTER
+    ================================ -->
+    <div id="screen-letter" class="screen">
+
+        <div class="letter-wrapper">
+
+            <div class="letter-header">
+                <span class="letter-icon">💌</span>
+                <h2>A letter, just for you</h2>
+            </div>
+
+            <div class="letter-body">
+                <!-- ✏️  PASTE YOUR LOVE LETTER BELOW THIS LINE -->
+
+                <p class="letter-placeholder">
+                    Baby I'm proud of who you are, 
+Proud of you everyday for everything you do,
+Even if to you it feels like I'm just "Saying" this,
+I genuinely do mean it... I am Proud of my baby.
+You always show that you love, always, 
+even when your days have been really tiring,
+even when your days have been really hectic,
+you always made just the right amount of time for me,
+You always somehow do, find a way to show that you love.
+I wanna thank you for that, I'm really grateful for being loved by you.
+
+You've made me realise that, I don't have to shrink myself to be easy to love,
+that you're in love with me as a person and not the idea of me.
+You make it easier for me to love myself
+I'm grateful that you carry around my heart 
+and heal it in every way,
+heal wounds i didn't know i had.
+You have this soft and familiar soul,
+that makes the inner kid in me feel loved and safe with you.
+
+
+
+This isn't just me saying that ill love you
+but also me saying that ill love you forever
+                </p>
+
+                <!-- ✏️  PASTE YOUR LOVE LETTER ABOVE THIS LINE -->
+            </div>
+
+            <div class="letter-footer">
+                <span>With all my love ❤️</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Floating hearts container -->
+    <div id="hearts-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
